@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bakery Site</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="navbar transparent" id="navbar">
+        <div class="logo">🍞 Bakery</div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#">Menu</a>
+            <a href="#">our offer</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1000">
+            <h1>Welcome to Our Bakery</h1>
+            <p>Delicious handcrafted bread & pastries made with love</p>
+            <a href="#about" class="btn">Learn More</a>
+            <a href="#about" class="btn">contact us</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-img" data-aos="fade-right" data-aos-duration="1000">
+                <img src="93241070410a046f2bf4602eb0d3449c.jpg" alt="Baking Image">
+            </div>
+            <div class="about-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                <h2>About Our Bakery</h2>
+                <p>We bake every day using fresh ingredients and traditional recipes passed down through generations.
+                    Discover the joy of fresh bread and delightful sweets.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">↑</button>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        let scrollBtn = document.getElementById("scrollBtn");
+        window.onscroll = function () {
+            scrollBtn.style.display = (document.documentElement.scrollTop > 200) ? "block" : "none";
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+
+</html>
