@@ -10,6 +10,14 @@
 </head>
 
 <body>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
     <header class="navbar transparent" id="navbar">
         <div class="logo">🍞 Bakery</div>
@@ -22,18 +30,21 @@
         </nav>
         <div class="menu-toggle" id="menuToggle">☰</div>
     </header>
-
-    <section class="hero">
-        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1000">
+    <section class="hero"
+        style="background-image: url('BAKERY.jpeg'); background-size: cover; background-position: center; height: 100vh;">
+        <div class="hero-content">
             <h1>Welcome to Our Bakery</h1>
             <p>Delicious handcrafted bread & pastries made with love</p>
             <a href="#about" class="btn">Learn More</a>
-            <a href="#about" class="btn">contact us</a>
+            <a href="#about" class="btn">Contact Us</a>
         </div>
     </section>
 
+
+
     <section class="about" id="about">
         <div class="about-container">
+
             <div class="about-img" data-aos="fade-right" data-aos-duration="1000">
                 <img src="images/alexandru-stavrica-170390-800x760.jpg" alt="Baking Image">
             </div>
